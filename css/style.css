@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+    --color-verde: #39B24A;
+    --color-rojo: #FC200C;
+    --color-blanco: #F3F3F3;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+header{ 
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: #222222;
+    height: 120px;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo h2{ 
+    font-size: 2rem;
+    color: #FFFFFF;
+}
+.logo h2 span:first-child{
+    color: var(--color-verde);
+}
+
+.logo h2 span:last-child{
+    color: #FC200C;
+    
+}
+
+header .logo img {
+    height: 96px;
+}
+
+nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+    color: #F3F3F3;
+    font-size: 1.1rem;
+}
+
+main{
+    display: flex;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+main .contenedor-izquierda {
+    width: 50%;
+    background-color: #FFFFFF;
+}
+
+main .contenedor-derecha {
+    width: 50%;
+    position: relative;
+}
+
+main .contenedor-derecha img {
+    width: 100%;
+    height: 100%;
+}
+
+main .contenedor-derecha h2 {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    color: #FC200C;
+    font-size: 1.7rem;
+}
+
+.contenedor-derecha h2 span {
+    color: #F3F3F3;
+}
+
+.contenedor-izquierda h2 {
+    color: var(--color-rojo);
+    text-align: center;
+    margin: 4%;
+    font-size: 2rem;
+}
+    
+.contenedor-pizzas-img {
+    display: flex;
+    align-items: center;
+    margin-top: 100px;
+}
+
+
+.contenedor-izquierda .izq {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* font-size: 25px; */
+    font-size: 1.7rem;
+    font-weight: 600;
+    align-items: center;
+    line-height: 40px;
+    margin-left: 100px;
+}
+
+.contenedor-izquierda .izq h3 {
+    margin-bottom: 10px;
+}
+
+.contenedor-izquierda .der {
+    width: 50%;
+    text-align: center;
+}
+
+
+.contenedor-izquierda .der img {
+    width: 45%;
+    min-width: 150px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    height: 190px;
+    background-color: #222222;
+    padding: 0 3%;
+    align-items: center;
+    padding-right: 70px;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    color: #E5E5E5;
+    font-size: 1.3rem;
+    line-height: 2.2rem;
+}
+
+footer .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+}
+
+footer .logo img {
+    width: 140px;
+    margin-right: 5%;
+}
+
